@@ -1,0 +1,11 @@
+
+  cloud:
+    gateway:
+      routes:
+        - id: r1
+          uri: http://localhost:8081/
+          predicates:  # Utilisez "predicates" en minuscules
+            - Path=/api/**  # Utilisez "Path" avec une majuscule, et il doit �tre sur la m�me ligne
+    discovery:
+      enabled: true
+

@@ -1,0 +1,5 @@
+com\example\userms\Entity\User$UserBuilder.class
+com\example\userms\UserMsApplication.class
+com\example\userms\Entity\User.class
+com\example\userms\Config\RestRepositoryConfig.class
+com\example\userms\Repository\UserRepositor.class

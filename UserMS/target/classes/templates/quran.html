@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Récitation du Coran</title>
+</head>
+<body>
+<h1>Récitation du Coran</h1>
+<div th:if="${error}">
+    <p style="color:red;" th:text="${error}"></p>
+</div>
+<div th:if="${response}">
+    <h2>Résultat :</h2>
+    <pre th:text="${response}"></pre>
+</div>
+</body>
+</html>

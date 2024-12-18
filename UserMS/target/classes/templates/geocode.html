@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Geocoding Result</title>
+</head>
+<body>
+<h1>Résultats de géocodage</h1>
+<p>Latitude : <span th:text="${latitude}">Latitude</span></p>
+<p>Longitude : <span th:text="${longitude}">Longitude</span></p>
+<p>Adresse : <span th:text="${address}">Adresse</span></p>
+
+<form action="/geocode" method="get">
+    <label for="lat">Latitude :</label>
+    <input type="text" id="lat" name="lat" required>
+    <label for="lng">Longitude :</label>
+    <input type="text" id="lng" name="lng" required>
+    <button type="submit">Rechercher</button>
+</form>
+</body>
+</html>
